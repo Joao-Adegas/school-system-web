@@ -1,0 +1,106 @@
+.container-login
+    display: flex
+    height: 100vh
+    width: 100vw
+
+.background-login
+    position: relative
+    width: 50%
+    height: 100vh
+    overflow: hidden
+
+    .wellcome-msg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+        color: #fff
+        z-index: 2
+        text-align: center
+
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        filter: brightness(40%)
+        position: relative
+        z-index: 1
+
+.containerBackground
+    width: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #ebeff5
+
+    .container-form
+        background-color: #fff
+        padding: 1.5rem
+        border-radius: 0.6rem
+        display: flex
+        flex-direction: column
+        gap: 1rem
+        border: 1px solid #e6e6e6
+
+        .image
+            display: flex
+            margin: 0 auto
+
+        .icone-lucide
+            background-color: blue
+            border-radius: 100%
+            padding: 1rem
+
+        .mensagens-wellcome
+            text-align: center
+
+            .subtitulo
+                color: #8f8e8e
+                font-size: 0.9rem
+
+        .titulo
+            font-weight: bold
+
+        .form
+            display: flex
+            gap: 1rem
+
+            button
+                border: none
+                padding: 0.5rem
+                border-radius: 0.5rem
+                color: white
+                background-color: black
+                font-weight: bold
+                cursor: pointer
+
+            input
+                border: none
+                outline: none
+                padding: 0.6rem 1rem
+                width: 22rem
+                background-color: #eeeeee
+                border-radius: 0.6rem
+
+            .input-container 
+                display: flex
+                flex-direction: column
+                gap: 0.5rem
+
+                .error
+                    color: red
+                    font-weight: bold
+
+                label
+                    font-weight: bold
+                    font-family: "Roboto"
+                    font-size: 0.9rem
+

@@ -1,0 +1,202 @@
+.container-ambiente
+    display: flex
+    flex-direction: column
+    gap: 2rem
+
+    .table-salas
+        display: flex
+        flex-direction: column
+        gap: 1rem
+
+        .header-salas
+            display: flex
+            align-items: center
+            gap: 1rem
+            cursor: pointer
+
+        .container-table-salas
+            width: max-content
+            background-color: #ffffff
+            border-radius: 1rem
+            padding: 1.5rem
+            box-shadow: 0 0 0 1px #e5e7eb
+
+            .btn-create-sala
+                cursor: pointer
+
+    .btns
+        .btn-cancelar
+            background-color: white
+            color: black
+            border: 1px solid gray
+
+    .top
+        display: flex
+        justify-content: space-between
+
+        .btn-create-ambiente
+            display: flex
+            align-items: center
+            gap: 0.5rem
+            border: none
+            padding: 0.5rem
+            border-radius: 0.5rem
+            background-color: black
+            color: white
+            cursor: pointer
+
+.container-table
+    width: 100%
+    background-color: #ffffff
+    border-radius: 1rem
+    padding: 1.5rem
+    box-shadow: 0 0 0 1px #e5e7eb
+
+    .top
+        display: flex
+
+    h2
+        font-size: 1.2rem
+        font-weight: 600
+
+    p
+        color: #6b7280
+        font-size: 0.9rem
+        margin-bottom: 1.2rem
+
+.ambiente-table
+    width: 100%
+    border-collapse: collapse
+    min-width: 700px
+    border-collapse: collapse
+
+    @media (max-width: 768px)
+        .container-table
+            padding: 1rem
+            border-radius: 0.5rem
+
+        .ambiente-table
+            font-size: 0.85rem
+
+        .actions
+            gap: 0.4rem
+
+    thead
+        th
+            text-align: left
+            font-size: 0.85rem
+            font-weight: 600
+            color: #374151
+            padding: 0.75rem
+            border-bottom: 1px solid #e5e7eb
+
+    tbody
+        tr
+            border-bottom: 1px solid #e5e7eb
+
+            &:hover
+                background-color: #f9fafb
+
+        td
+            padding: 0.9rem 0.75rem
+            font-size: 0.9rem
+            color: #111827
+            vertical-align: middle
+
+    .empty-table
+        text-align: center
+        padding: 1.5rem
+        font-style: italic
+        color: #6b7280
+
+.badge
+    padding: 0.3rem 0.7rem
+    border-radius: 999px
+    font-size: 0.75rem
+    font-weight: 500
+    display: inline-block
+
+.badge-manha
+    background-color: #fef3c7
+    color: #92400e
+
+.badge-tarde
+    background-color: #ffedd5
+    color: #c2410c
+
+.badge-noite
+    background-color: #dbeafe
+    color: #1d4ed8
+
+.actions
+    display: flex
+    gap: 0.8rem
+    align-items: center
+
+    button
+        background: none
+        border: none
+        cursor: pointer
+        padding: 0.3rem
+        display: flex
+        align-items: center
+        justify-content: center
+
+        &:hover
+            opacity: 0.8
+
+    .view
+        color: #111827
+
+    .edit
+        color: #111827
+
+    .delete
+        color: #dc2626
+
+        &:hover
+            color: #b91c1c
+
+form
+    display: flex
+    flex-direction: column
+    gap: 0.6rem
+
+    label
+        font-size: 0.85rem
+        font-weight: 500
+
+    input,
+    select,textarea
+        padding: 0.5rem
+        border-radius: 0.4rem
+        border: 1px solid #d1d5db
+        font-family: 'Poppins'
+        font-size: 0.9rem
+        font-family: "Roboto"
+        cursor: pointer
+
+    button
+        margin-top: 1rem
+        padding: 0.6rem
+        border: none
+        border-radius: 0.4rem
+        background-color: #020617
+        color: #ffffff
+        cursor: pointer
+
+        &:hover
+            opacity: 0.9
+
+.erro-msg
+    color: #dc2626
+    font-size: 0.9rem
+
+.error-message
+    color: #dc2626
+    font-size: 0.8rem
+    margin-top: 2px
+
+select.error,
+input.error
+    border: 1px solid #dc2626
